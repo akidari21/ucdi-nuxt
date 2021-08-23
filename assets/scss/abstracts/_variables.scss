@@ -1,0 +1,150 @@
+// -----------------------------------------------------------------------------
+// Variables
+// -----------------------------------------------------------------------------
+
+// Colors
+//
+// $blue: material-color('blue', '700');
+// $indigo: material-color('deep-purple', 'a400');
+// $purple: material-color('purple', 'a400');
+// $pink: material-color('pink', 'a400');
+// $red: material-color('red', 'a400');
+// $orange: material-color('orange', 'a400');
+// $yellow: material-color('yellow', 'a400');
+// $green: material-color('green', 'a400');
+// $teal: material-color('teal', 'a400');
+// $cyan: material-color('cyan', 'a400');
+// $gray: material-color('grey', '600');
+// $gray-dark: material-color('grey', '800');
+
+$primary: #288ee2 !default;
+$secondary: #e2e2e2 !default;
+$success: #286cff !default;
+$info: #cdeefc !default;
+$warning: #dd5414 !default;
+$danger: #f11e3a !default;
+$light: #f2f2f2 !default;
+$dark: #333 !default;
+
+$black: #000;
+$white: #fff;
+
+// $primary: $pink !default;
+// $secondary: material-color('lime', 'a400') !default;
+// $success: $green !default;
+// $info: $cyan !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+// $light: material-color('grey', '50') !default;
+// $dark: material-color('grey', '900') !default;
+
+// Body
+//
+$body-bg: $light;
+$body-color: #{var(--default-text-color)};
+
+// Typography
+//
+$font-family-sans-serif: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 900;
+
+$h1-font-size: $font-size-base * 2.75;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+
+$headings-font-weight: $font-weight-bolder;
+
+// Bootstrap 5 Components Color variable changes
+// all variables could be fine in "~bootstrap/scss/variables"
+// of course todo more changes...
+//
+
+$input-btn-focus-width: 0.1rem;
+$input-btn-focus-box-shadow: 0 0 0 0.1rem rgb(34 121 192 / 50%);
+
+$btn-focus-box-shadow: $input-btn-focus-box-shadow;
+$btn-box-shadow: inset 0 1px 0 rgba($white, 0.15), 0 1px 1px rgba($black, 0.075);
+$btn-focus-width: $input-btn-focus-width;
+$btn-active-box-shadow: inset 0 1px 2px rgba($black, 0.125);
+
+// BS text muted color
+$text-muted: rgba(#{var(--default-text-color-rgb)}, 0.5) !default;
+
+// BS input check colors as css variable
+$form-check-input-checked-bg-color: #{var(--secondary-color)} !default;
+$form-check-input-focus-border: rgba(
+  #{var(--secondary-color-rgb)},
+  0.5
+) !default;
+$form-check-input-checked-border-color: #{var(--secondary-color)} !default;
+$form-check-input-indeterminate-bg-color: #{var(--secondary-color)} !default;
+$form-check-input-indeterminate-border-color: #{var(--secondary-color)} !default;
+$input-btn-focus-color: rgba(#{var(--secondary-color-rgb)}, 0.25) !default;
+
+/*=========================================
+// SCard rule set
+// $font-size-base: 1rem; 기준 (16px)
+// body 주요 폰트 크기 기준 14px로 적용 필요
+===========================================*/
+
+// grid custom
+$grid-columns: 12;
+$grid-gutter-width: 12px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// container width custom
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px,
+// );
+
+// container custom
+// NSD 기준 양쪽 margin 21px
+// col의 양쪽 gutter 12px / 2 값 적용
+$container-padding-x: 21px;
+
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// gutter custom
+// 세로 gap 별도 정의 가능 여부 검토 필요!
+$spacer: 1rem;
+$gutters: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+// set container
+.container {
+  @include make-container();
+}

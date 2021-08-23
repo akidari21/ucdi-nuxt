@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// Button Common
+// -----------------------------------------------------------------------------
+
+// Size custom
+$btn-padding-y-xs: 0.1rem;
+$btn-padding-x-xs: 0.3rem;
+$btn-font-size-xs: 0.75rem;
+
+$btn-padding-y-sm: 0.2rem;
+$btn-padding-x-sm: 0.5rem;
+$btn-font-size-sm: 0.875rem;
+
+$btn-padding-y-lg: 0.4rem;
+$btn-padding-x-lg: 0.6rem;
+$btn-font-size-lg: 1.2rem;
+
+$btn-padding-y-xl: 0.5rem;
+$btn-padding-x-xl: 0.75rem;
+$btn-font-size-xl: 1.5rem;
+
+$btn-border-radius-xs: 0.2rem;
+$btn-border-radius-sm: 0.25rem;
+$btn-border-radius-lg: 0.3rem;
+$btn-border-radius-xl: 0;
+
+// Common buttons
+.btn {
+  outline: 0;
+  &-xs {
+    @include button-size(
+      $btn-padding-y-xs,
+      $btn-padding-x-xs,
+      $btn-font-size-xs,
+      $btn-border-radius-xs
+    );
+  }
+  &-sm {
+    @include button-size(
+      $btn-padding-y-sm,
+      $btn-padding-x-sm,
+      $btn-font-size-sm,
+      $btn-border-radius-sm
+    );
+  }
+  &-lg {
+    @include button-size(
+      $btn-padding-y-lg,
+      $btn-padding-x-lg,
+      $btn-font-size-lg,
+      $btn-border-radius-lg
+    );
+  }
+  &-xl {
+    @include button-size(
+      $btn-padding-y-xl,
+      $btn-padding-x-xl,
+      $btn-font-size-xl,
+      $btn-border-radius-xl
+    );
+  }
+}
