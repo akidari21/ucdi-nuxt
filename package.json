@@ -13,8 +13,8 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint",
-    "*.{css, scss, vue}": "stylelint"
+    "/pages/**/*.{js,vue}": "eslint",
+    "/assets/**/*.{css, scss, vue}": "stylelint"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",

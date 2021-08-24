@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Card</h2>
+    <h2 class="tt-card">Card</h2>
   </section>
 </template>
 
@@ -10,3 +10,9 @@ export default {
   layout: 'default',
 }
 </script>
+
+<style lang="scss" scoped>
+.tt-card {
+  color: red;
+}
+</style>

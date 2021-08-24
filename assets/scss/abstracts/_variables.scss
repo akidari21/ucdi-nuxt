@@ -40,27 +40,30 @@ $white: #fff;
 
 // Body
 //
-$body-bg: $light;
+$body-bg: $white;
 $body-color: #{var(--default-text-color)};
 
 // Typography
 //
-$font-family-sans-serif: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+  'Noto Sans KR',
+  // Emoji fonts
+  'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 $font-family-base: $font-family-sans-serif;
 
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-lg: $font-size-base * 1.25;
 $font-size-sm: $font-size-base * 0.875;
 
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 500;
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-bold: 700;
 $font-weight-bolder: 900;
 
-$h1-font-size: $font-size-base * 2.75;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.2;
 
 $headings-font-weight: $font-weight-bolder;
 

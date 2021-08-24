@@ -1,4 +1,5 @@
 <template>
+  <!-- ** template 안에는 반드시 하나의 부모 wrapper 적용 필요 -->
   <section>
     <h2>Button</h2>
     <!-- step 3. import한 컴포넌트는 tag형식으로 적용 -->
