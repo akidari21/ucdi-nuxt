@@ -2,7 +2,7 @@
   <div class="container readme">
     <h1>NUXT(Vue) 기반 UI 마크업 가이드 v0.5</h1>
     <p>
-      본 가이드는 HTML,CSS 작업자의 Vue 컴포넌트 환경 기반 마크업을 위한 작업
+      본 가이드는 HTML,CSS 작업자의 Vue 컴포넌트 환경 기반 UI 마크업을 위한 작업
       가이드입니다.
     </p>
 
@@ -90,6 +90,13 @@
           </ul>
         </li>
       </ul>
+    </section>
+
+    <section>
+      <h2>샘플 파일 참조</h2>
+      <p>
+        개발 환경 클론 후, 위 작업 폴더에 작성된 예시 *.vue 파일 내 주석 참고
+      </p>
     </section>
   </div>
 </template>
