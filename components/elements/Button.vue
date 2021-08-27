@@ -1,21 +1,18 @@
 <template>
-  <section class="container-fluid example">
-    <div class="d-flex flex-column">
-      <button class="btn btn-xs btn-primary">버튼</button>
-      <button class="btn btn-sm btn-primary">버튼</button>
-      <button class="btn btn-primary">버튼</button>
-      <button class="btn btn-lg btn-primary">버튼</button>
-      <button class="btn btn-xl btn-primary">버튼</button>
-    </div>
-  </section>
+  <div>
+    <button class="btn btn-primary" type="button">기본 버튼</button>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-// 공통 외의 Special 예외 버튼이 있을 경우만 작성
-// 가이드용 scss
-.example {
-  .btn {
-    margin-bottom: 1rem;
+// 공통 외의 예외 스타일이 있을 경우 작성
+// 컴포넌트 스타일 커스터마이징
+.btn {
+  &-primary {
+    background-color: $secondary;
+    &:hover {
+      background-color: #f2f2f2;
+    }
   }
 }
 </style>

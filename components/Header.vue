@@ -14,8 +14,11 @@
         <div class="navbar-collapse collapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <nuxt-link class="nav-link" aria-current="page" to="/"
-                >Home</nuxt-link
+              <nuxt-link
+                class="nav-link"
+                aria-current="page"
+                to="/ui-common/common"
+                >Common</nuxt-link
               >
             </li>
             <li class="nav-item">
@@ -29,9 +32,9 @@
               >
             </li>
           </ul>
-          <!-- <form class="d-flex">
+          <form class="d-flex">
             <input
-              class="form-control me-2"
+              class="form-control me-1"
               type="search"
               placeholder="Search"
               aria-label="Search"
@@ -39,7 +42,7 @@
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
-          </form> -->
+          </form>
         </div>
       </div>
     </nav>

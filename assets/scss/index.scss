@@ -1,20 +1,20 @@
 // Abstracts
-@import './abstracts/math';
-@import './abstracts/variables';
-@import './abstracts/functions';
-@import './abstracts/mixins';
+@import 'abstracts/math';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
 
 // Vendors
 @import '~bootstrap/scss/bootstrap';
 
 // Base
-@import './base/base';
+@import 'base/base';
 // @import "base/helpers";
 @import 'base/fonts';
 // @import "base/typography";
 
 // Components
-@import './components/buttons';
+@import 'components/buttons';
 
 // Themes
 @import 'themes/default';
